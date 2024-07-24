@@ -1,0 +1,74 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.backgdDiv {
+  background-color: #ebe7e3;
+}
+.card-img-top {
+  border-radius: 40px;
+  padding: 20px 25px 10px;
+}
+.card {
+  border-radius: 30px;
+}
+.text-color {
+  color: #05008b;
+}
+.custom-btn {
+  background-color: #05008b;
+  color: #fff;
+}
+.btnColor {
+  background-color: #ffddcc;
+}
+.hrborder {
+  border-top: 3px dashed black;
+}
+
+.fromcontainer {
+  display: grid;
+  padding: auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 50px 50px 50px 50px 50px 50px;
+  grid-gap: 1rem;
+  grid-template-areas:
+    " content-1 sidebar sidebar"
+    " content-2 sidebar sidebar"
+    " content-3 sidebar sidebar"
+    " content-4 sidebar sidebar"
+    "footer footer footer";
+}
+
+.sidebar {
+  background-image: linear-gradient(203deg, #3edfd7 0%, #29a49d 90%);
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+.content-1 {
+  grid-area: content-1;
+}
+
+.content-2 {
+  grid-area: content-2;
+}
+
+.content-3 {
+  grid-area: content-3;
+}
+
+.content-4 {
+  grid-area: content-4;
+}
+
+.footer {
+  grid-area: footer;
+  grid-row: 7 / 6;
+  grid-column: 1 / 4;
+  border-radius: 30px;
+}
+
